@@ -1,0 +1,50 @@
+.ty-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  padding: 2rem;
+}
+.ty-inner {
+  text-align: center;
+  max-width: 480px;
+  animation: fadeUp 0.8s ease forwards;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.ty-ornament {
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+.ty-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+.ty-rule {
+  width: 50px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 2rem;
+}
+.ty-text {
+  font-size: 1.4rem;
+  color: rgba(245,240,232,0.75);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.ty-sub {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(245,240,232,0.4);
+}

@@ -1,0 +1,39 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #F5F0E8;
+  --ink: #1A1714;
+  --ink-light: #4A4540;
+  --gold: #B8935A;
+  --gold-light: #D4AF7A;
+  --rule: #D4C9B0;
+  --error: #8B3A2A;
+  --success: #2A5A3A;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+input, select, textarea, button {
+  font-family: var(--font-serif);
+  font-size: inherit;
+}
+
+::selection {
+  background: var(--gold-light);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
